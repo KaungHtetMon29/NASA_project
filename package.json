@@ -8,6 +8,7 @@
     "client": "npm start --prefix nasa-front-end",
     "buildclient":"npm run build --prefix nasa-front-end",
     "watch": "npm run buildclient&& npm-run-all -p server client",
+    "deploy":"npm run build --prefix nasa-front-end && npm start --prefix nasa-back-end",
     "installserver": "npm install --prefix nasa-back-end",
     "installclient": "npm install --prefix nasa-front-end",
     "installall": "npm run installserver && npm run installclient",
