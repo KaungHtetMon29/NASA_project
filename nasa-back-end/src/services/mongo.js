@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const mgurl =
-  "mongodb+srv://nasaproject:nasaproject123@nasaprojectcluster.7no9w1m.mongodb.net/NasaProjectCluster?retryWrites=true&w=majority";
+require("dotenv").config();
+const mgurl = process.env.URL;
 
 mongoose.connection.once("open", () => {
   console.log("connected");
