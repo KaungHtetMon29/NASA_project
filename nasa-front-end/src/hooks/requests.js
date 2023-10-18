@@ -23,7 +23,7 @@ async function httpSubmitLaunch(launch) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(launch),
     });
-    const data = await response.json();
+
     if (response.status === 400) {
       throw new Error("400");
     } else {
