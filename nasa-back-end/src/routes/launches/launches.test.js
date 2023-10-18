@@ -3,14 +3,10 @@ const { app } = require("../../index");
 const { mongodisconnect, mongo } = require("../../services/mongo");
 describe("Api Test", () => {
   beforeAll(async () => {
-    try {
-      await mongo(); // Ensure that the MongoDB connection is successfully established
-    } catch (error) {
-      console.error("MongoDB connection error:", error);
-    }
+    await mongo();
   });
   afterAll(async () => {
-    await mongodisconnect(); // Ensure that the MongoDB connection is successfully established
+    await mongodisconnect();
   });
   describe("Test Get/launches", () => {
     test("It should respond", async () => {
