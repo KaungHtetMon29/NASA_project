@@ -12,7 +12,7 @@
     "installserver": "npm install --prefix nasa-back-end",
     "installclient": "npm install --prefix nasa-front-end",
     "installall": "npm run installserver && npm run installclient",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm test --prefix nasa-back-end"
   },
   "keywords": [],
   "author": "",

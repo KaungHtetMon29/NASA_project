@@ -9,6 +9,7 @@ mongoose.connection.on("error", (err) => {
   console.error(err);
 });
 async function mongo() {
+  console.log("ran");
   return await mongoose.connect(mgurl);
 }
 async function mongodisconnect() {
