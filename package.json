@@ -1,0 +1,22 @@
+{
+  "name": "nasa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm run dev --prefix nasa-back-end",
+    "client": "npm start --prefix nasa-front-end",
+    "buildclient":"npm run build --prefix nasa-front-end",
+    "watch": "npm run buildclient&& npm-run-all -p server client",
+    "installserver": "npm install --prefix nasa-back-end",
+    "installclient": "npm install --prefix nasa-front-end",
+    "installall": "npm run installserver && npm run installclient",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
