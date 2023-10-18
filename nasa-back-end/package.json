@@ -7,7 +7,8 @@
     "test": "jest",
     "test-watch": "jest --watchAll",
     "dev": "nodemon src/index.js",
-    "cluster": "pm2 start src/index.js -i max",
+    "start": "pm2 start src/index.js -i max",
+    "stop":"pm2 stop src/index.js",
     "deletecluster": "pm2 delete"
   },
   "keywords": [],
